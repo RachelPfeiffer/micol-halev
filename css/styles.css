@@ -24,6 +24,19 @@ img {
   box-shadow: 1px 1px 3px black;
 }
 
+.section {
+  /* pad sections on top so when you scroll to them the header doesn't cover */
+  padding-top: 130px;
+}
+
+#topsection {
+  margin-top: -130px;
+}
+
+#donate {
+  padding-top: 130px;
+}
+
 .orange {
   background-color: #FF9500;
 }
@@ -217,4 +230,8 @@ ul .rslides.rslides1 {
 .donate.container {
   padding: 1em;
   border-radius: 5px;
+}
+
+.far, .fa-phone {
+  font-size: 2em;
 }

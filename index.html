@@ -30,7 +30,7 @@ jQuery(function ($) {
     });
 		</script>
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<body data-spy="scroll" data-target=".navbar" data-offset="10px">
 
 		<!-- body -->
 
@@ -52,7 +52,7 @@ jQuery(function ($) {
             <a class="nav-link blue text-center" href="#programs">Programs</a>
           </li>
 					<li class="nav-item">
-						<a class="nav-link orange text-center" href="#volunteer">Volunteer</a>
+						<a class="nav-link orange text-center" href="#staff">Staff</a>
 					</li>
           <li class="nav-item ">
             <a class="nav-link green text-center" href="#contact">Contact</a>
@@ -64,13 +64,9 @@ jQuery(function ($) {
 
       </div>
     </nav>
-		<div class="" id="home">
-
-		</div>
-
-			<div class="container-fluid" id="topsection">
+		<div class="section" id="home">
+			<div class="container-fluid" id="">
 				<div class="row">
-
 					<div class="jumbotron col-lg-8 text-center ml-auto">
 						<!-- slider -->
 						<div class="slider wrapper">
@@ -113,12 +109,13 @@ jQuery(function ($) {
 						</div>
 					</div>
 				</div>
-
-
 				</div>
+		</div>
 
 
-		<!-- Programs -->
+
+
+		<!-- Programs --><div class="section" id="programs">
 		<div class="container mb-3 mt-3 bg-dark text-white">
 			<div class="text-center">
 				<h3 class="heading">Micol Halev Programs:</h3>
@@ -154,11 +151,11 @@ jQuery(function ($) {
 						<i class="fas fa-user-friends"></i>
 					</div>
 					Family Support</div>
-
-
-
 			</div>
 		</div>
+
+		</div>
+
 		<!-- Donate button -->
 		<div class="container text-center">
 			<button class=" donate btn btn-xl mt-5 mb-5" type="button" name="button">Donate</button>
@@ -242,7 +239,7 @@ jQuery(function ($) {
 		throughout the year</span> to ease the burden on disabled chidren and their parents.</h5>
 		</div>
 		<!-- Our Staff -->
-		<div class="container jumbotron text-center blue text-white">
+		<div id="staff" class="section container jumbotron text-center blue text-white">
 			<h3 class="heading">Our Staff</h3>
 			<img src="images/staff.jpg" alt="caregiver">
 			<p class="mb-5">Our staff members are all unpaid volunteers who go above and beyond to make
@@ -303,14 +300,15 @@ jQuery(function ($) {
 			</div>
 
 		</div>
-		<!-- Donate section -->
-		<div class="donate container red">
-			<div class="row translucent text-white">
-				<div class="col-sm-8">
+
+		<!-- Donate section --><div class="section" id="donate">
+		<div class="donate container red" >
+			<div class="row translucent text-white" >
+				<div class="col-sm-8 m-auto text-center" >
 					<h3 class="heading">Help Us Out</h3>
 					<p class="large">Your donation is 100% tzedakah, used to help special children and their families.</p>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-md-3 text-center">
 					<!-- paypal donate button -->
 					<form class=".float-right" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_donations" />
@@ -322,26 +320,49 @@ jQuery(function ($) {
 				</div>
 			</div>
 		</div>
-		<!-- How to volunteer -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 pink">
-					<i class="far fa-hand-point-up"></i>
-					<h3>Volunteer</h3>
-					<p>Join us in giving special kids a great time! Call our main office to volunteer.</p>
-				</div>
-				<!-- Contact us -->
-				<div class="col-md-6 jumbotron">
-					<h3>Contact</h3>
-
-				</div>
-
-			</div>
 
 		</div>
+
+		<!-- How to volunteer -->
+		<div class="container section">
+			<div class="row">
+				<div class="col-md-6 pink jumbotron">
+					<div class="text-center large m-auto">
+						<i class="far fa-hand-point-up"></i>
+					</div>
+					<h3 class="text-center">Volunteer</h3>
+					<p>Join us in giving special kids a great time! <br> Call our main office to volunteer.</p>
+					<span class="text-center"><b>(02) 580-9397</b></span>
+				</div>
+				<!-- Contact us -->
+				<div class="col-md-6 jumbotron " id="contact">
+					<div class="text-center large m-auto">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+					</div>
+
+					<h3 class="text-center">Contact</h3>
+
+					<div class="contact">
+						<b>Israel Office</b><br>
+						<span>Kaf Hachaim 30</span><br>
+						<span>Beitar Illit, Israel 90500</span><br>
+						<span>(02) 580-9397</span><br>
+				</div>
+				<div class="U.S. Office">
+					<b>U.S. Office</b><br>
+					<span>American Friends of Micol Halev</span><br>
+					<span>c/o Rabbi Nonny Muss</span><br>
+					<span>1132 E. 8th Street</span><br>
+					<span>Brooklyn, NY 11230</span>
+
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Footer -->
-		<div class="footer">
-			Footer
+		<div class="footer text-center small">
+			All rights reserved &copy; Micol Halev 2019
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
